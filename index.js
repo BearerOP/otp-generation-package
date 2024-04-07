@@ -1,6 +1,6 @@
 const otpGenerator = {
     generate: function(length, options) {
-        let allowedChars = '0123456789'; // Numbers are always allowed
+        let allowedChars = '0123456789'; 
         if (options.upperCaseAlphabets) {
             allowedChars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         }
