@@ -20,12 +20,12 @@ Import the module into your JavaScript file:
 Generating OTP
 You can generate a one-time password by calling the generate method:
 
-```let otp = otpGenerator.generate(6, {```
-```upperCaseAlphabets: true,```
-```specialChars: true,```
-```lowerCaseAlphabets: true,```
-```});```
-```console.log(otp);```
+```let otp = otpGenerator.generate(6, {
+    upperCaseAlphabets: true,
+    specialChars: true,
+    lowerCaseAlphabets: true,
+});
+console.log(otp);```
 
 Parameters
 * length: Length of the OTP to generate (required).
@@ -36,12 +36,12 @@ Parameters
 Example
 Generate a 6-character OTP with uppercase alphabets, lowercase alphabets, and special characters:
 
-```let otp = otpGenerator.generate(6, {```
-```upperCaseAlphabets: true,```
-```specialChars: true,```
-```lowerCaseAlphabets: true,```
-```});```
-```console.log(otp);```
+```let otp = otpGenerator.generate(6, {
+    upperCaseAlphabets: true,
+    specialChars: true,
+    lowerCaseAlphabets: true,
+});
+console.log(otp);```
 
 ## License
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
