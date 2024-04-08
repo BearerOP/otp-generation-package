@@ -3,8 +3,6 @@
 #otp-generator
 
 > 'otp-generator' is simple one time password generator and can be used as password generator.
-[![Build Status][travis-ci-img]][travis-ci-url] 
-[![npm version][npm-version-img]][npm-version-url]
 ![npm](https://img.shields.io/npm/dm/otp-generation?style=plastic)
 
 [![NPM](https://nodei.co/npm/otp-generation.png?downloadRank=true&downloads=true)](https://nodei.co/npm/otp-generator/)
