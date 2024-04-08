@@ -6,8 +6,6 @@
 [![Build Status][travis-ci-img]][travis-ci-url] 
 [![npm version][npm-version-img]][npm-version-url]
 ![npm](https://img.shields.io/npm/dm/otp-generation?style=plastic)
-[![Test Coverage][coveralls-image]][coveralls-url]
-[![js-standard-style][js-standard-style-img]][js-standard-style-url] 
 
 [![NPM](https://nodei.co/npm/otp-generation.png?downloadRank=true&downloads=true)](https://nodei.co/npm/otp-generator/)
 
