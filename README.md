@@ -1,48 +1,66 @@
 # otp-generation-package
 
+#otp-generator
 
-OTP Generator
-Overview
-OTP Generator is a simple JavaScript module that allows you to generate one-time passwords with customizable options.
-Features
-* Generate one-time passwords with specified length and character options.
-* Customize password generation by enabling/disabling uppercase alphabets, lowercase alphabets, and special characters.
-Installation
-To use the OTP Generator module in your project, you can install it via npm:
+> 'otp-generator' is simple one time password generator and can be used as password generator.
+[![Build Status][travis-ci-img]][travis-ci-url] 
+[![npm version][npm-version-img]][npm-version-url]
+![npm](https://img.shields.io/npm/dm/otp-generation?style=plastic)
+[![Test Coverage][coveralls-image]][coveralls-url]
+[![js-standard-style][js-standard-style-img]][js-standard-style-url] 
 
-```npm install otp-generator```
+[![NPM](https://nodei.co/npm/otp-generation.png?downloadRank=true&downloads=true)](https://nodei.co/npm/otp-generator/)
 
-Usage
-Import the module into your JavaScript file:
+## Index
+* [Install](#install)
+* [Usage](#usage)
+* [Test](#test)
+* [License](#license)
 
-```import otpGenerator from 'otp-generator’;```
+## Install
 
-Generating OTP
-You can generate a one-time password by calling the generate method:
+```bash
+npm install otp-generation
+```
 
-```let otp = otpGenerator.generate(6, {
-    upperCaseAlphabets: true,
-    specialChars: true,
-    lowerCaseAlphabets: true,
-});
-console.log(otp);```
+## Usage
 
-Parameters
-* length: Length of the OTP to generate (required).
-* options: An object containing options for customizing OTP generation (optional).
-    * upperCaseAlphabets: Set to true to include uppercase alphabets in the OTP (default: false).
-    * lowerCaseAlphabets: Set to true to include lowercase alphabets in the OTP (default: false).
-    * specialChars: Set to true to include special characters in the OTP (default: false).
+```js
+const otpGenerator = require('otp-generation')
+
+otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false });
+
+```
+### generate(length, options)
+
+**Arguments**
+
+* `length` - length of password. Optional if `options` is optional. default length is 10.
+* `options` - optional
+  - `digits` - Default: `true` true value includes digits in OTP 
+  - `lowerCaseAlphabets` - Default: `true` true value includes lowercase alphabets in OTP
+  - `upperCaseAlphabets` - Default: `true` true value includes uppercase alphabets in OTP
+  - `specialChars` - Default: `true` true value includes special Characters in OTP
+
+## Tests
+
+```js
+npm run test
+```
+
 Example
 Generate a 6-character OTP with uppercase alphabets, lowercase alphabets, and special characters:
 
-```let otp = otpGenerator.generate(6, {
+```js
+    let otp = otpGenerator.generate(6, {
     upperCaseAlphabets: true,
     specialChars: true,
     lowerCaseAlphabets: true,
 });
-console.log(otp);```
+console.log(otp);
+```
 
 ## License
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
 
