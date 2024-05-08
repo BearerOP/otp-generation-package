@@ -1,0 +1,20 @@
+{
+  "name": "otp-generation",
+  "version": "1.0.5",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BearerOP/otp-generation-package.git"
+  },
+  "author": "Ankit Yadav",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/BearerOP/otp-generation-package/issues"
+  },
+  "homepage": "https://github.com/BearerOP/otp-generation-package#readme"
+}
